@@ -15,11 +15,11 @@ def id_generator
 end
 
 def my_hash_creator(key, value)
-  my_hash_creator = { key => value }
+  my_hash_creator = { key => value } #its not a symbol because it has already been declared as a parameter
 end
 
 def read_from_hash(hash, key)
-  # return the correct value using the hash and key parameters
+  hash[key]
 end
 
 def update_counting_hash(hash, key)
